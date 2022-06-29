@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="http://bryantineoportafolio.com/images/bryanmax9_icon.png"
+    />
+
+    <title>Active Worm &mdash; Beach Chat</title>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <img
+          src="/img/bryanmax9_icon.png"
+          alt="Active Worm logo"
+          class="logo"
+        />
+        <form action="#" class="search">
+          <input
+            type="text"
+            class="search__input"
+            placeholder="Search a fish"
+          />
+          <button class="search__button">
+            <svg class="search__icon">
+              <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+            </svg>
+          </button>
+        </form>
+
+        <nav class="user-nav">
+          <div class="user-nav__icon-box notification-button">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+            </svg>
+
+            <span class="user-nav__notification">4</span>
+
+            <div class="dropdown-notification">
+              <h1>Notifications</h1>
+              <a href="#">Welcome to Beach Chat!</a>
+              <a href="#">Find some new friends to talk to, have fun!</a>
+              <a href="#">shark369 have been added to your friend list</a>
+              <a href="#">Give us some feedback!</a>
+            </div>
+          </div>
+          <div class="user-nav__icon-box message-button">
+            <svg class="user-nav__icon">
+              <use xlink:href="img/sprite.svg#icon-chat"></use>
+            </svg>
+
+            <div class="dropdown-messages">
+              <h1>Messages</h1>
+              <div class="chats">
+                <img
+                  src="/img/fish-2.webp"
+                  alt="User photo"
+                  class="user-nav__user-photo"
+                />
+                <a href="#"
+                  >shark369: Hi, how are you doing?. At what time is the
+                  party?</a
+                >
+              </div>
+
+              <div class="chats">
+                <img
+                  src="/img/yo.jpg"
+                  alt="User photo"
+                  class="user-nav__user-photo"
+                />
+                <a href="#">Bryanmax9(Admin): Hi, thanks for using our app!</a>
+              </div>
+
+              <div class="chats">
+                <img
+                  src="/img/bot.png"
+                  alt="User photo"
+                  class="user-nav__user-photo"
+                />
+                <a href="#"
+                  >support: Hi!, start adding and chatting with fishes</a
+                >
+              </div>
+            </div>
+            <span class="user-nav__notification">3</span>
+          </div>
+
+          <div class="user-nav__user menu-button">
+            <img
+              src="/img/fish-1.webp"
+              alt="User photo"
+              class="user-nav__user-photo"
+            />
+            <span class="user-nav__user-name">Fisher123</span>
+            <div class="dropdown-menu">
+              <a class="link-menu" href="#">Settings</a>
+              <a class="link-menu" href="#">Friends</a>
+              <a class="link-menu" href="#">Achivements</a>
+              <a class="link-menu" href="#">Sign out</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="content">
+        <nav class="sidebar">
+          <ul class="side-nav">
+            <li class="side-nav__item side-nav__item--active">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-home"></use>
+                </svg>
+                <span>Home-Page</span>
+              </a>
+            </li>
+            <li class="side-nav__item">
+              <a href="#" class="side-nav__link">
+                <svg class="side-nav__icon">
+                  <use xlink:href="img/sprite.svg#icon-game-controller"></use>
+                </svg>
+                <span>Games</span>
+              </a>
+            </li>
+          </ul>
+
+          <div class="legal">
+            &copy; 2022 by Active Worm. All rights reserved.
+          </div>
+        </nav>
+        <main class="hotel-view">
+          <div class="gallery">
+            <figure class="gallery__item">
+              <img
+                src="/img/Longbeach-1.webp"
+                alt="Photo of hotel 1"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="/img/longbeach-2.webp"
+                alt="Photo of hotel 2"
+                class="gallery__photo"
+              />
+            </figure>
+            <figure class="gallery__item">
+              <img
+                src="img/longbeach-3.jpg"
+                alt="Photo of hotel 3"
+                class="gallery__photo"
+              />
+            </figure>
+          </div>
+
+          <div class="overview">
+            <h1 class="overview__heading">Fishes in Long Beach</h1>
+            <div class="overview__stars">
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+              <svg class="overview__icon-star">
+                <use xlink:href="img/sprite.svg#icon-star"></use>
+              </svg>
+            </div>
+
+            <div class="overview__location">
+              <svg class="overview__icon-location">
+                <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+              </svg>
+              <button class="btn-inline">Long Beach, California</button>
+            </div>
+          </div>
+
+          <div class="detail">
+            <div class="description">
+              <p class="paragraph title">
+                Just got ran over by a scooter on Ocean
+              </p>
+              <p class="paragraph">
+                I was standing on the edge of the sidewalk in front of a taco
+                truck. An employee came to the window and signaled that I could
+                place my order, so I took a couple steps forward. There was a
+                guy and a kid on a scooter going down the sidewalk to my left.
+                The scooter is electric so I couldn't really hear it coming
+                until it was too late. He went 'woah woah woah' and we collided.
+                If it had been someone walking at worst it would've been an
+                awkward 'oh excuse me,' which would've been my bad, but because
+                it was a scooter rider he ran over my leg and now I have a
+                pretty bad sprain (in a lot of pain, can't walk normally). If
+                you are mindful of blind turns, hazards, and other people, I
+                don't think it's unsafe to ride a scooter on the sidewalk. I
+                feel the same way about riding a skateboard on the sidewalk. But
+                please don't assume people realize you're coming.
+              </p>
+
+              <div class="recommend">
+                <p class="recommend__count">
+                  shark369 and 3 other commented in this Post.
+                </p>
+                <div class="recommend__friends">
+                  <img
+                    src="/img/fish-2.webp"
+                    alt="Friend 1"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/fish-3.webp"
+                    alt="Friend 2"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/fish-4.webp"
+                    alt="Friend 3"
+                    class="recommend__photo"
+                  />
+                  <img
+                    src="img/fish-5.webp"
+                    alt="Friend 4"
+                    class="recommend__photo"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="user-reviews">
+              <figure class="review">
+                <blockquote class="review__text">
+                  <strong
+                    >House for Rent in Long Beach Available July 2022 Close to
+                    CSULB campus</strong
+                  >
+                  <br />Hello, I have a spacious 3 bed 2 bath unfurnished house
+                  for rent on Termino near 7th Street in Long Beach which will
+                  become available in July...
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/fish-6.jpg"
+                    alt="User 1"
+                    class="review__photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">TheGold-fish</p>
+                    <p class="review__user-date">Feb 23rd, 2022</p>
+                  </div>
+                </figcaption>
+              </figure>
+
+              <figure class="review">
+                <blockquote class="review__text">
+                  <strong
+                    >So I went out to a bar, this is what happened on my first
+                    night out</strong
+                  >
+                  <br />I took a few hits on the thc, dropped a gummy and then
+                  took a deep breath. Then I made my way to the door at the bar
+                  next door to my work...
+                </blockquote>
+                <figcaption class="review__user">
+                  <img
+                    src="img/fish-7.jpg"
+                    alt="User 2"
+                    class="review__photo"
+                  />
+                  <div class="review__user-box">
+                    <p class="review__user-name">RoboFishy4</p>
+                    <p class="review__user-date">Sept 13th, 2022</p>
+                  </div>
+                </figcaption>
+              </figure>
+              <button class="btn-inline">show all <span>&rarr;</span></button>
+            </div>
+          </div>
+          <div class="cta">
+            <h2 class="cta__book-now">
+              Search Random Fish to talk to in you area
+            </h2>
+            <button class="btn">
+              <span class="btn__visible">Search fishes</span>
+              <span class="btn__invisible">More then 1000 fishes online</span>
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>

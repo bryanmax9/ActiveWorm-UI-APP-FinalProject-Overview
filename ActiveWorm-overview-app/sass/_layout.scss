@@ -1,0 +1,114 @@
+//Layout
+
+.container {
+  /* max-width will allow the container to shrink when the viewport is less then 120 rem */
+  max-width: 120rem;
+  /* center top and bottom 80pixels = 8rem. left and right auto*/
+  /* this will center the container in the center of the body element */
+  margin: 8rem auto;
+  background-color: var(--color-grey-light-1);
+  box-shadow: var(--shadow-dark);
+
+  min-height: 50rem;
+
+  @media only screen and (max-width: $bp-largest) {
+    margin: 0;
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+.header {
+  font-size: 1.4rem;
+  /* search tab */
+  height: 7rem;
+  background-color: #fff;
+  border-bottom: var(--line);
+
+  display: flex;
+  /* give space to the icon, the searchbar and the notification and user-logo */
+  justify-content: space-between;
+  /* align items in the y axis */
+  align-items: center;
+
+  @media screen and (max-width: $bp-smallest) {
+    flex-wrap: wrap;
+    /*  align items center will verticaly align the items but will join them together */
+    /* Instead, we use space around to center it but separating the elements */
+    align-items: space-around;
+    /* Since we are putting the search bar in a new line, we must put more space for the elements */
+    height: 11rem;
+  }
+}
+
+.content {
+  /* make the sidebar and the hotel-view be side by side with flexbox */
+  display: flex;
+
+  @media only screen and (max-width: $bp-medium) {
+    flex-direction: column;
+  }
+}
+
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+
+  /* defining width */
+  /* flex-grow, flex-shrink, flex-basis*/
+  flex: 0 0 18%; // it will automatically shrink because is in percentage. If it was in pixel value you would need to shrink
+
+  /* flex-direction to column and justify content space between, this will make the legal text to be pushed to the bottom  */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hotel-view {
+  background-color: #fff;
+
+  /* flex: 1 will allow the element to ocuppy as much width as it can */
+  flex: 1;
+}
+
+.detail {
+  font-size: 1.4rem;
+  display: flex;
+  padding: 4.5rem;
+  background-color: var(--color-grey-light-1);
+  border-bottom: var(--line);
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+  }
+}
+
+.description {
+  background-color: #fff;
+  box-shadow: var(--shadow-light);
+  padding: 3rem;
+  /* flex grow 0, flex shrink 0, and 60% of flex basis */
+  flex: 0 0 60%;
+  margin-right: 4.5rem;
+
+  @media only screen and (max-width: $bp-medium) {
+    padding: 2rem;
+    margin-right: 3rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    margin-right: 0;
+    margin-bottom: 3rem;
+  }
+}
+
+.user-reviews {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
